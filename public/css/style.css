@@ -1,0 +1,366 @@
+/* ========================================
+   GENERAL
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #1f2937;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.navbar {
+    width: 100%;
+    padding: 25px 0;
+    background: #fafafa;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.logo span {
+    color: #8b7bb8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    color: #4b5563;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #8b7bb8;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-greeting {
+    font-size: 18px;
+    color: #8b7bb8;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+.hero h1 span {
+    color: #8b7bb8;
+}
+
+.hero h2 {
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 25px;
+}
+
+.hero h2 span {
+    color: #8b7bb8;
+}
+
+.hero-description {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6b7280;
+    margin-bottom: 35px;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #8b7bb8;
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid #d1d5db;
+    color: #374151;
+}
+
+.btn-secondary:hover {
+    background: #f3f4f6;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+/* ========================================
+   GENERAL SECTIONS
+======================================== */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+}
+
+.section-label {
+    color: #8b7bb8;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    color: #111827;
+}
+
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about-section {
+    background: #ffffff;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 700px;
+}
+
+.about-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.about-highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.highlight-card {
+    padding: 30px 20px;
+    background: #faf9fc;
+    border: 1px solid #eeeaf5;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.highlight-number {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    color: #8b7bb8;
+    margin-bottom: 8px;
+}
+
+.highlight-label {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+/* ========================================
+   EDUCATION
+======================================== */
+
+.education-section {
+    background: #fafafa;
+}
+
+.education-card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 40px;
+    padding: 40px;
+    background: #ffffff;
+    border: 1px solid #eeeaf5;
+    border-radius: 14px;
+}
+
+.education-year {
+    color: #8b7bb8;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.education-details h3 {
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.education-details h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.education-major {
+    color: #8b7bb8;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.education-achievement {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.education-achievement span {
+    padding: 8px 14px;
+    background: #f5f2fa;
+    border-radius: 20px;
+    color: #66588c;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   RESPONSIVE - SECTIONS
+======================================== */
+
+@media (max-width: 768px) {
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-highlight {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .education-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 30px;
+    }
+
+}
